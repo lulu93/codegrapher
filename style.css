@@ -1,0 +1,46 @@
+body {
+	background: #000;
+}
+.namespace{
+	color: #00bb33;
+}
+.class-template{
+	color: #0099ff;
+}
+.cppclass{
+	color: #4455ff;
+}
+.class-template .template{
+	color: #ff3366;
+	/*font-size: 12px;
+	margin-left: 50px;*/
+}
+.comment {
+	color: #ff8822;
+	/*font-size: 12px;
+	margin-left: 50px;*/
+}
+.level1 {
+	font-size: 40px;
+	margin-left: 0px;
+}
+.level2 {
+	font-size: 30px;
+	margin-left: 50px;
+}
+.level3 {
+	font-size: 20px;
+	margin-left: 40px;
+}
+.level4 {
+	font-size: 15px;
+	margin-left: 30px;
+}
+.level5 {
+	font-size: 15px;
+	margin-left: 25px;
+}
+.level6 {
+	font-size: 15px;
+	margin-left: 20px;
+}

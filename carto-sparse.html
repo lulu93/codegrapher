@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div class="namespace level1"> cagtographer
@@ -36,18 +37,26 @@
 			</div>
 		</div>
 		<div class="cppclass level3">BucketHistogram
+			<div class="comment level4">
+				//?
+			</div>
 		</div>
 		<div class="cppclass level3">Histogram
+			<div class="comment level4">
+				//?
+			</div>
 		</div>
 		<div class="cppclass level3">LuaParameterDictionary
 			<div class="comment level4">// A parameter dictionary that gets loaded from Lua code.</div>
 		</div>
-
-
 	</div>
 	<div class="namespace level2">Kalman_filter
 		<div class="namespace level3">proto
-			<div class="comment level4">//...
+			<div class="comment level4">//..
+			</div>
+			<div class="cppclass level4">PoseTrackerOptions
+				<div class="comment level4">//?
+				</div>
 			</div>
 		</div>
 		<div class="class-template level3">GaussianDistribution
@@ -57,62 +66,19 @@
 				template &lttypename T, int N&gt
 			</div>
 		</div>
-		<div class="operator level3">GaussianDistribution
-			<div class="comment level4">//define guassian distribution
-			</div>
-			<div class="template level4">
-				template &lttypename T, int N&gt
+		<div class="cppclass level3">ImuTracker
+			<div class="comment level4">// Keeps track of the orientation using angular velocities and linear accelerations from an IMU. Because averaged linear acceleration (assuming slow movement) is a direct measurement of gravity, roll/pitch does not drift, though yaw does.
 			</div>
 		</div>
+		<div class="cppclass level3">PoseTracker
+			<div class="comment level4">// A Kalman filter for a 3D state of position and orientation. Includes functions to update from IMU and laser scan matches.
+			</div>
+		</div>
+		<div class="cppclass level3">PoseTrackerTest
+				<div class="comment level4">//?
+				</div>
+			</div>
 	</div>
 </div>
 </body>
 </html>
-<style type="text/css">
-	body {
-		background: #000;
-	}
-	.namespace{
-		color: #004411;
-	}
-	.class-template{
-		color: #0099ff;
-	}
-	.cppclass{
-		color: #0000ff;
-	}
-	.class-template .template{
-		color: #ff0000;
-		/*font-size: 12px;
-		margin-left: 50px;*/
-	}
-	.comment {
-		color: #000;
-		/*font-size: 12px;
-		margin-left: 50px;*/
-	}
-	.level1 {
-		font-size: 40px;
-		margin-left: 0px;
-	}
-	.level2 {
-		font-size: 30px;
-		margin-left: 50px;
-	}
-	.level3 {
-		font-size: 20px;
-		margin-left: 40px;
-	}
-	.level4 {
-		font-size: 15px;
-		margin-left: 30px;
-	}
-	.level5 {
-		font-size: 15px;
-		margin-left: 25px;
-	}
-	.level6 {
-		font-size: 15px;
-		margin-left: 20px;
-	}
-</style>
