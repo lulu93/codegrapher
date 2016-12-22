@@ -1,28 +1,61 @@
 <HTML>
-<div class="namespace level1"> cagtographer:
-	<div class="namespace level2">common:
-		<div class="class-template level3">BlockingQueue:
-			<div class="comment">
+<div class="namespace level1"> cagtographer
+	<div class="namespace level2">common
+		<div class="namespace level3">proto
+			<div class="cppclass level4">CeresSolverOptions
+			</div>
+		</div>
+		<div class="class-template level3">BlockingQueue
+			<div class="comment level4">
 				//A thread-safe blocking queue that is useful for producer consumer patterns. 'T' must be movable.
 			</div>
-			<div class="template">
+			<div class="template level4">
 				template &lt;typename T&gt;
 			</div>
 		</div>
-		<div class="class-template level3">OrderedMultiQueue:
-			<div class="comment">
+		<div class="class-template level3">OrderedMultiQueue
+			<div class="comment level4">
 				//Maintains multiple queues of sogted values and dispatches merge sogtedvalues. This class is thread-compatible. 
 			</div>
-			<div class="template">
+			<div class="template level4">
 				template &lttypename QueueKeyType, typename SogtKeyType, typename ValueType&gt
 			</div>
 		</div>
-		<div class="class-template level3">RateTimer:
-			<div class="comment">
+		<div class="class-template level3">RateTimer
+			<div class="comment level4">
 				// Computes the rate at which pulses come in.
 			</div>
-			<div class="template">
+			<div class="template level4">
 				template &lttypename ClockType = std::chrono::steady_clock&gt
+			</div>
+		</div>
+		<div class="cppclass level3">BucketHistogram
+		</div>
+		<div class="cppclass level3">Histogram
+		</div>
+		<div class="cppclass level3">LuaParameterDictionary
+			<div class="comment level4">// A parameter dictionary that gets loaded from Lua code.</div>
+		</div>
+
+
+	</div>
+	<div class="namespace level2">Kalman_filter
+		<div class="namespace level3">proto
+			<div class="comment level4">//...
+			</div>
+		</div>
+		<div class="class-template level3">GaussianDistribution
+			<div class="comment level4">//define guassian distribution
+			</div>
+			<div class="template level4">
+				template &lttypename T, int N&gt
+			</div>
+		</div>
+		<div class="operator level3">GaussianDistribution
+			<div class="comment level4">//define guassian distribution
+			</div>
+			<div class="template level4">
+				template &lttypename T, int N&gt
 			</div>
 		</div>
 	</div>
@@ -33,29 +66,43 @@
 		color: #004411;
 	}
 	.class-template{
+		color: #0099ff;
+	}
+	.cppclass{
 		color: #0000ff;
 	}
 	.class-template .template{
 		color: #ff0000;
-		font-size: 16px;
-		margin-left: 30px;
+		/*font-size: 12px;
+		margin-left: 50px;*/
 	}
 	.comment {
 		color: #000;
-		font-size: 16px;
-		margin-left: 30px;
+		/*font-size: 12px;
+		margin-left: 50px;*/
 	}
 	.level1 {
-		font-size: 30px;
+		font-size: 40px;
 		margin-left: 0px;
 	}
 	.level2 {
-		font-size: 26px;
+		font-size: 30px;
 		margin-left: 50px;
 	}
 	.level3 {
-		font-size: 22px;
-		margin-left: 50px;
+		font-size: 20px;
+		margin-left: 40px;
 	}
-
+	.level4 {
+		font-size: 15px;
+		margin-left: 30px;
+	}
+	.level5 {
+		font-size: 15px;
+		margin-left: 25px;
+	}
+	.level6 {
+		font-size: 15px;
+		margin-left: 20px;
+	}
 </style>
