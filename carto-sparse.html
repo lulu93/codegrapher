@@ -1,0 +1,61 @@
+<HTML>
+<div class="namespace level1"> cagtographer:
+	<div class="namespace level2">common:
+		<div class="class-template level3">BlockingQueue:
+			<div class="comment">
+				//A thread-safe blocking queue that is useful for producer consumer patterns. 'T' must be movable.
+			</div>
+			<div class="template">
+				template &lt;typename T&gt;
+			</div>
+		</div>
+		<div class="class-template level3">OrderedMultiQueue:
+			<div class="comment">
+				//Maintains multiple queues of sogted values and dispatches merge sogtedvalues. This class is thread-compatible. 
+			</div>
+			<div class="template">
+				template &lttypename QueueKeyType, typename SogtKeyType, typename ValueType&gt
+			</div>
+		</div>
+		<div class="class-template level3">RateTimer:
+			<div class="comment">
+				// Computes the rate at which pulses come in.
+			</div>
+			<div class="template">
+				template &lttypename ClockType = std::chrono::steady_clock&gt
+			</div>
+		</div>
+	</div>
+</div>
+</HTML>
+<style type="text/css">
+	.namespace{
+		color: #004411;
+	}
+	.class-template{
+		color: #0000ff;
+	}
+	.class-template .template{
+		color: #ff0000;
+		font-size: 16px;
+		margin-left: 30px;
+	}
+	.comment {
+		color: #000;
+		font-size: 16px;
+		margin-left: 30px;
+	}
+	.level1 {
+		font-size: 30px;
+		margin-left: 0px;
+	}
+	.level2 {
+		font-size: 26px;
+		margin-left: 50px;
+	}
+	.level3 {
+		font-size: 22px;
+		margin-left: 50px;
+	}
+
+</style>
